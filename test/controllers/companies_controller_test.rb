@@ -2,7 +2,6 @@ require "test_helper"
 require "application_system_test_case"
 
 class CompaniesControllerTest < ApplicationSystemTestCase
-
   def setup
     @company = companies(:hometown_painting)
   end
@@ -71,5 +70,4 @@ class CompaniesControllerTest < ApplicationSystemTestCase
       assert_text "Company was successfully destroyed."
     end
   end
-  
 end
