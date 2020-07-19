@@ -38,4 +38,5 @@ en:
           attributes:
             email:
               invalid_email_format: "Company email is not valid"
-            
+            zip_code:
+              invalid_zip_code: "Company zip code is not valid"
