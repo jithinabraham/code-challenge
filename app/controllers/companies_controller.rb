@@ -30,7 +30,15 @@ class CompaniesController < ApplicationController
     else
       render :edit
     end
-  end  
+  end
+
+  def destroy
+    if @company.destroy
+      redirect_to companies_path, notice: 'Company was successfully destroyed.'
+    else
+      redirect_to companies_path, flash: { error: "Insufficient rights!" }
+    end
+  end
 
   private
 
